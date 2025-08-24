@@ -865,7 +865,6 @@
                 padding: 0.6rem 0;
                 width: 100%;
                 font-size: 1rem;
-                /* Slightly larger for better readability */
             }
 
             .hamburger {
@@ -880,20 +879,16 @@
 
             .header-bg {
                 height: 60vh;
-                /* Reduced height for mobile */
                 background-position: center top;
-                /* Ensure key image parts are visible */
             }
 
             .hero-content {
                 padding-top: 60px;
-                /* Adjusted for promo banner and navbar */
                 padding-bottom: 2rem;
             }
 
             .hero-content h1 {
                 font-size: 1.8rem;
-                /* Smaller but readable */
                 line-height: 1.2;
             }
 
@@ -1052,26 +1047,29 @@
             <span class="hourglass-icon"></span>
         </div>
 
-        <div class="container mx-auto px-6 navbar-container">
-            <div class="navbar-logo" id="navbar-logo">
-                <a href="#" class="flex items-center">
-                    <img src="./images/beyaz-logo.jpg" alt="Elevate Logo"
-                        class="logo-white h-14 w-auto rounded-lg hover:scale-105 transition-transform duration-300">
-                    <img src="./images/siyah-logo.jpg" alt="Elevate Logo"
-                        class="logo-black h-14 w-auto rounded-lg hover:scale-105 transition-transform duration-300">
-                </a>
-            </div>
-            <button id="hamburger-btn" class="hamburger text-white text-xl md:hidden">
-                <i class="fas fa-bars"></i>
-            </button>
-            <ul class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-8" id="nav-menu">
-                <li><a href="#hakkimizda" onclick="scrollToSection('hakkimizda')">Hakkımızda</a></li>
-                <li><a href="#urunvideo" onclick="scrollToSection('urunvideo')">Ürün Videoları</a></li>
-                <li><a href="#urun-kullanim" onclick="scrollToSection('urun-kullanim')">Ürün Kullanım Alanları</a></li>
-                <li><a href="#urun-gorseller" onclick="scrollToSection('urun-gorseller')">Ürün Görselleri</a></li>
-                <li><a href="#iletisim" onclick="scrollToSection('iletisim')">İletişim</a></li>
-            </ul>
-        </div>
+       <div class="container mx-auto px-6 navbar-container flex justify-between items-center">
+    <div class="navbar-logo" id="navbar-logo">
+        <a href="#" class="flex items-center">
+            <img src="./images/beyaz-logo.jpg" alt="Elevate Logo"
+                class="logo-white h-14 w-auto rounded-lg hover:scale-105 transition-transform duration-300">
+            <img src="./images/siyah-logo.jpg" alt="Elevate Logo"
+                class="logo-black h-14 w-auto rounded-lg hover:scale-105 transition-transform duration-300">
+        </a>
+    </div>
+
+    <button id="hamburger-btn" class="hamburger text-white text-xl md:hidden ml-auto">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <ul class="hidden md:flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-8" id="nav-menu">
+        <li><a href="#hakkimizda" onclick="scrollToSection('hakkimizda')">Hakkımızda</a></li>
+        <li><a href="#urunvideo" onclick="scrollToSection('urunvideo')">Ürün Videoları</a></li>
+        <li><a href="#urun-kullanim" onclick="scrollToSection('urun-kullanim')">Ürün Kullanım Alanları</a></li>
+        <li><a href="#urun-gorseller" onclick="scrollToSection('urun-gorseller')">Ürün Görselleri</a></li>
+        <li><a href="#iletisim" onclick="scrollToSection('iletisim')">İletişim</a></li>
+    </ul>
+</div>
+
     </nav>
 
     <section id="hero" class="header-bg">
