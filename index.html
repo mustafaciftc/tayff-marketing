@@ -144,18 +144,6 @@
             backdrop-filter: blur(20px);
         }
 
-        .navbar a {
-            color: #ffffff;
-            font-size: 1rem;
-            font-weight: 400;
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            transition: color 0.3s ease;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
         .navbar.scrolled a {
             color: #000000;
         }
@@ -186,9 +174,22 @@
 
         .navbar-logo {
             display: flex;
-            justify-content: flex-start;
+            align-items: center;
             height: 50px;
         }
+
+        .navbar a {
+            color: #ffffff;
+            font-size: 1rem;
+            font-weight: 400;
+            transition: color 0.3s ease;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .navbar a:hover {
+            color: #f97316;
+        }
+
 
         .logo-white {
             display: none;
@@ -1047,28 +1048,29 @@
             <span class="hourglass-icon"></span>
         </div>
 
-       <div class="container mx-auto px-6 navbar-container flex justify-between items-center">
-    <div class="navbar-logo" id="navbar-logo">
-        <a href="#" class="flex items-center">
-            <img src="./images/beyaz-logo.jpg" alt="Elevate Logo"
-                class="logo-white h-14 w-auto rounded-lg hover:scale-105 transition-transform duration-300">
-            <img src="./images/siyah-logo.jpg" alt="Elevate Logo"
-                class="logo-black h-14 w-auto rounded-lg hover:scale-105 transition-transform duration-300">
-        </a>
-    </div>
+        <div class="container mx-auto px-6 navbar-container flex justify-between items-center">
+            <div class="navbar-logo" id="navbar-logo">
+                <a href="#" class="flex items-center">
+                    <img src="./images/beyaz-logo.jpg" alt="Elevate Logo"
+                        class="logo-white h-14 w-auto rounded-lg hover:scale-105 transition-transform duration-300">
+                    <img src="./images/siyah-logo.jpg" alt="Elevate Logo"
+                        class="logo-black h-14 w-auto rounded-lg hover:scale-105 transition-transform duration-300">
+                </a>
+            </div>
 
-    <button id="hamburger-btn" class="hamburger text-white text-xl md:hidden ml-auto">
-        <i class="fas fa-bars"></i>
-    </button>
+            <button id="hamburger-btn" class="hamburger text-white text-xl md:hidden ml-auto">
+                <i class="fas fa-bars"></i>
+            </button>
 
-    <ul class="hidden md:flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-8" id="nav-menu">
-        <li><a href="#hakkimizda" onclick="scrollToSection('hakkimizda')">Hakkımızda</a></li>
-        <li><a href="#urunvideo" onclick="scrollToSection('urunvideo')">Ürün Videoları</a></li>
-        <li><a href="#urun-kullanim" onclick="scrollToSection('urun-kullanim')">Ürün Kullanım Alanları</a></li>
-        <li><a href="#urun-gorseller" onclick="scrollToSection('urun-gorseller')">Ürün Görselleri</a></li>
-        <li><a href="#iletisim" onclick="scrollToSection('iletisim')">İletişim</a></li>
-    </ul>
-</div>
+            <ul class="hidden md:flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-8"
+                id="nav-menu">
+                <li><a href="#hakkimizda" onclick="scrollToSection('hakkimizda')">Hakkımızda</a></li>
+                <li><a href="#urunvideo" onclick="scrollToSection('urunvideo')">Ürün Videoları</a></li>
+                <li><a href="#urun-kullanim" onclick="scrollToSection('urun-kullanim')">Ürün Kullanım Alanları</a></li>
+                <li><a href="#urun-gorseller" onclick="scrollToSection('urun-gorseller')">Ürün Görselleri</a></li>
+                <li><a href="#iletisim" onclick="scrollToSection('iletisim')">İletişim</a></li>
+            </ul>
+        </div>
 
     </nav>
 
