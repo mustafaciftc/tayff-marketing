@@ -984,6 +984,7 @@
                 position: relative;
                 top: 130px;
             }
+
             .floating {
                 display: none;
             }
@@ -1110,8 +1111,8 @@
         </div>
     </section>
 
-        <br>
-        <br>
+    <br>
+    <br>
     <section id="urunvideo">
         <div class="container mx-auto text-center px-4">
             <div class="fade-in">
@@ -1431,7 +1432,8 @@
                                 <div>
                                     <h4 class="font-semibold">Adres</h4>
                                     <p class="text-gray-300">Güneştepe Mahallesi,<br>Uygur Sokak
-                                     <br>No: 4 D1, Güngören/İstanbul * 34164</p>
+                                        <br>No: 4 D1, Güngören/İstanbul * 34164
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -1550,9 +1552,14 @@
             });
 
             const sliders = ['siyah', 'beyaz', 'kirmizi', 'mavi', 'yesil', 'sari'];
+
             sliders.forEach(color => {
                 new Swiper(`.mySwiper-${color}`, {
                     loop: true,
+                    autoplay: {
+                        delay: 3000,
+                        disableOnInteraction: false,
+                    },
                     navigation: {
                         nextEl: `.mySwiper-${color} .swiper-button-next`,
                         prevEl: `.mySwiper-${color} .swiper-button-prev`,
@@ -1563,6 +1570,7 @@
                     },
                 });
             });
+
 
         });
     </script>
