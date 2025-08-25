@@ -173,37 +173,37 @@
         }
 
 
-.navbar-logo img {
-    height: 50px;
-    width: auto;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-}
+        .navbar-logo img {
+            height: 50px;
+            width: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
 
-.navbar-logo img:hover {
-    transform: scale(1.05);
-}
+        .navbar-logo img:hover {
+            transform: scale(1.05);
+        }
 
-.nav-menu {
-    list-style: none;
-    display: flex;
-    gap: 32px; 
-    position: relative;
-    right: 10px;
-}
+        .nav-menu {
+            list-style: none;
+            display: flex;
+            gap: 32px;
+            position: relative;
+            right: 10px;
+        }
 
-.nav-menu li a {
-    color: #ffffff;
-    font-size: 0.8rem;
-    font-weight: 400;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
+        .nav-menu li a {
+            color: #ffffff;
+            font-size: 0.8rem;
+            font-weight: 400;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
 
-.nav-menu li a:hover {
-    color: #f97316; 
-}
+        .nav-menu li a:hover {
+            color: #f97316;
+        }
 
         .navbar a:hover {
             color: #f97316;
@@ -929,16 +929,6 @@
                 font-size: 0.85rem;
             }
 
-            .card {
-                padding: 1.2rem;
-                margin: 0 0.5rem;
-            }
-
-            .product-img {
-                height: 180px;
-                object-fit: cover;
-            }
-
             .play-button {
                 width: 45px;
                 height: 45px;
@@ -1001,6 +991,10 @@
                 top: 130px;
             }
 
+            #hakkimizda {
+                margin-top: 180px;
+            }
+
             .floating {
                 display: none;
             }
@@ -1054,6 +1048,15 @@
                 font-size: 0.85rem;
                 padding: 0.7rem;
             }
+
+            .fas {
+                position: relative;
+                top: 115px;
+            }
+
+            #copyright {
+                font-size: 14px;
+            }
         }
     </style>
 </head>
@@ -1067,26 +1070,26 @@
             <span class="hourglass-icon"></span>
         </div>
 
-      <div class="navbar-container">
-    <div class="navbar-logo" id="navbar-logo">
-        <a href="#">
-            <img src="./images/beyaz-logo.jpg" alt="Elevate Logo" class="logo-white">
-            <img src="./images/siyah-logo.jpg" alt="Elevate Logo" class="logo-black">
-        </a>
-    </div>
+        <div class="navbar-container">
+            <div class="navbar-logo" id="navbar-logo">
+                <a href="#">
+                    <img src="./images/beyaz-logo.jpg" alt="Elevate Logo" class="logo-white">
+                    <img src="./images/siyah-logo.jpg" alt="Elevate Logo" class="logo-black">
+                </a>
+            </div>
 
-    <button id="hamburger-btn" class="hamburger">
-        <i class="fas fa-bars"></i>
-    </button>
+            <button id="hamburger-btn" class="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
 
-    <ul class="nav-menu" id="nav-menu">
-        <li><a href="#hakkimizda" onclick="scrollToSection('hakkimizda')">Hakkımızda</a></li>
-        <li><a href="#urunvideo" onclick="scrollToSection('urunvideo')">Ürün Videoları</a></li>
-        <li><a href="#urun-kullanim" onclick="scrollToSection('urun-kullanim')">Ürün Kullanım Alanları</a></li>
-        <li><a href="#urun-gorseller" onclick="scrollToSection('urun-gorseller')">Ürün Görselleri</a></li>
-        <li><a href="#iletisim" onclick="scrollToSection('iletisim')">İletişim</a></li>
-    </ul>
-</div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#hakkimizda" onclick="scrollToSection('hakkimizda')">Hakkımızda</a></li>
+                <li><a href="#urunvideo" onclick="scrollToSection('urunvideo')">Ürün Videoları</a></li>
+                <li><a href="#urun-kullanim" onclick="scrollToSection('urun-kullanim')">Ürün Kullanım Alanları</a></li>
+                <li><a href="#urun-gorseller" onclick="scrollToSection('urun-gorseller')">Ürün Görselleri</a></li>
+                <li><a href="#iletisim" onclick="scrollToSection('iletisim')">İletişim</a></li>
+            </ul>
+        </div>
 
     </nav>
 
@@ -1115,12 +1118,13 @@
                     hassasiyet üzerine kurulu.
                 </p>
             </div>
-            <div class="grid md:grid-cols-1 gap-6">
+
+            <div class="grid grid-cols-1 gap-6">
                 <div class="card fade-in">
-                    <img src="./images/banner-1.jpg" alt="" class="product-img">
+                    <img src="./images/banner-1.jpg" alt="banner-1" class="w-full h-auto object-cover rounded-lg">
                 </div>
                 <div class="card fade-in" style="animation-delay: 0.2s">
-                    <img src="./images/banner-2.jpg" alt="" class="product-img">
+                    <img src="./images/banner-2.jpg" alt="banner-2" class="w-full h-auto object-cover rounded-lg">
                 </div>
             </div>
         </div>
@@ -1377,28 +1381,30 @@
         <div class="container mx-auto px-4">
             <div class="text-center fade-in">
                 <h2 class="text-orange-500 mb-4">İLETİŞİM</h2>
-                <p class="text-lg md:text-xl mb-12 max-w-3xl mx-auto text-gray-300 font-light">
-                    Bizimle bağlantı kurun, sorularınızı yanıtlayalım. Uzman ekibimiz size yardımcı olmak için burada.
-                </p>
+                <p class="text-lg md:text-xl mb-12 max-w-3xl mx-auto text-gray-300 font-light">Bizimle bağlantı kurun,
+                    sorularınızı yanıtlayalım. Uzman ekibimiz size yardımcı olmak için burada.</p>
             </div>
-
             <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
                 <div class="card fade-in">
                     <h3 class="text-xl font-semibold mb-6 text-white text-center">Bize Mesaj Gönderin</h3>
-                    <form class="contact-form">
+                    <form class="contact-form" action="https://formsubmit.co/info@tayff.com.tr" method="POST">
+                        <input type="hidden" name="_subject" value="Elevate Araçlar - Yeni İletişim Formu Mesajı">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_captcha" value="false">
+
                         <div class="form-group">
-                            <input type="text" placeholder="Adınız ve Soyadınız" required>
+                            <input type="text" name="İsim" placeholder="Adınız ve Soyadınız" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" placeholder="E-posta Adresiniz" required>
+                            <input type="email" name="E-posta" placeholder="E-posta Adresiniz" required>
                         </div>
                         <div class="form-group">
-                            <input type="tel" placeholder="Telefon Numaranız">
+                            <input type="tel" name="Telefon" placeholder="Telefon Numaranız">
                         </div>
                         <div class="form-group">
-                            <textarea placeholder="Mesajınız" rows="5" required></textarea>
+                            <textarea name="Mesaj" placeholder="Mesajınız" rows="5" required></textarea>
                         </div>
-                        <button class="btn-primary w-full">
+                        <button type="submit" class="btn-primary w-full">
                             <i class="fas fa-paper-plane mr-2"></i>Mesajı Gönder
                         </button>
                     </form>
@@ -1437,7 +1443,7 @@
                                 </div>
                                 <div>
                                     <h4 class="font-semibold">Telefon</h4>
-                                    <p class="text-gray-300">+90 (544) 245 74 41</p>
+                                    <p class="text-gray-300">+90 (505) 673 18 97</p>
                                 </div>
                             </div>
                             <div class="flex items-start">
@@ -1446,13 +1452,11 @@
                                 </div>
                                 <div>
                                     <h4 class="font-semibold">Adres</h4>
-                                    <p class="text-gray-300">Güneştepe Mahallesi,<br>Uygur Sokak
-                                        <br>No: 4 D1, Güngören/İstanbul * 34164
-                                    </p>
+                                    <p class="text-gray-300">Güneştepe Mahallesi,<br>Uygur Sokak <br>No: 4 D1,
+                                        Güngören/İstanbul * 34164</p>
                                 </div>
                             </div>
                         </div>
-
                         <div class="social-media-wrapper">
                             <a href="#" class="social-icon">
                                 <i class="fab fa-facebook-f text-lg"></i>
@@ -1474,7 +1478,12 @@
                 </div>
             </div>
         </div>
+    <footer class="text-center py-6 mt-8 bg-black text-gray-400">
+        <p id="copyright"></p>
+    </footer>
     </section>
+
+  
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
@@ -1521,19 +1530,16 @@
             const form = document.querySelector('.contact-form');
             if (form) {
                 form.addEventListener('submit', function (e) {
-                    e.preventDefault();
                     const button = form.querySelector('button');
                     const originalText = button.innerHTML;
+
                     button.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Gönderiliyor...';
                     button.disabled = true;
+
                     setTimeout(() => {
-                        button.innerHTML = '<i class="fas fa-check mr-2"></i>Gönderildi!';
-                        button.style.background = 'linear-gradient(135deg, #10b981, #059669)';
-                        setTimeout(() => {
-                            button.innerHTML = originalText; button.disabled = false;
-                            button.style.background = 'linear-gradient(135deg, #F34100, #ff5722)'; form.reset();
-                        }, 1500);
-                    }, 1500);
+                        button.innerHTML = originalText;
+                        button.disabled = false;
+                    }, 5000);
                 });
             }
 
@@ -1588,6 +1594,10 @@
 
 
         });
+
+        const year = new Date().getFullYear();
+        document.getElementById("copyright").innerHTML =
+            `© ${year} Elevate Araçlar. Tüm hakları saklıdır.`;
     </script>
 </body>
 
